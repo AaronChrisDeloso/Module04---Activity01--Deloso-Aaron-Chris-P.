@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Deloso's Website</title>
+
+        <!-- Outsource CCS & Java Script-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            div img {
+                width: 400px;
+            }
+            .modbutton{
+                background-color: #c44a41;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+            .mod1button{
+                padding: 0;
+                border: none;
+                background: none;
+            }
+            #tcenter {
+                text-align:center;
+            }
+            [title~=stitch] {
+                 border: 5px solid blue;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #010102;
+                padding: 2px;
+            }
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 2px;
+                font-size: 30px;
+                text-align: center;
+            }
+            
+        </style>        
+
+
+    </head>
+    <body  class="hero"   style="background-image: url('img/background.png');">
+
+
+        <!-- Masthead-->
+        <section>
+        <header class="masthead">
+            <div class="container d-flex align-items-center flex-column">
+                <button class="mod1button" onclick="showAlertStich()"><img class="masthead-avatar mb-5" src="img/stitch.gif" alt="Profile Pic" " title="stitch"/></button>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <input class="modbutton" id="button" type="submit" name="studentbutton" value="Student" onclick="showAlertStudent();"/>
+                    </div>
+                    <div class="grid-item">
+                        <input class="modbutton" id="button" type="submit" name="professorbutton" value="Professor" onclick="showAlertProfessor();"/>
+                    </div>            
+                </div>
+
+
+
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon" ></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <p class="masthead-subheading font-weight-light mb-0" id="tcenter">Aaron Chris P. Deloso</p>
+                <p class="masthead-subheading font-weight-light mb-0" id="tcenter">BSIT 3 - PDC20</p>
+        </div>
+    </header>
+
+        <!-- My Internal Javascript-->
+        <script>
+            //function button for clicking Professor
+            function showAlertProfessor() {
+                alert ("You Clicked Professor");
+            }
+        </script>
+        
+        <script type="text/javascript">
+            //function button for clicking Student
+            function showAlertStudent() {
+                alert ("You Clicked Student");
+            }
+        </script> 
+
+        <!--Linking External Javascript-->>
+        <script src="Script.js"></script>
+         
+  
+ 
+    </section>
+        
+    </body>
+</html>
